@@ -3,12 +3,12 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Lisbon Tiles Playground</title>
+	<title>Submit your Tile | Lisbon Tiles Playground</title>
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.css">	
 </head>
 <body>
 
@@ -51,14 +51,13 @@
 <!-- Fim Header -->
 
 
-
 <!-- Slider -->
-<section id="home-header">
+<section id="home-header" class="submit-tile">
 	<div class="container">
 		<header>
-			<h1>Welcome to Lisbon Tiles Playground:<br> A free colection of  SVG repeatable patterns
-				based on Lisbon tiles and their history.</h1>
-			<a href="#lisbon-tiles" id="browse-tiles">browse<br> patterns</a>
+			<h1>Submit your tile:</h1>
+			 <h2>Are you a lisbon tile lover? have you made a tile design?<br>
+			  Share your tile, share history.</h2>
 			<div class="circle">
 				<i id="setinha" class="fa fa-chevron-down"></i>
 			</div>	
@@ -68,85 +67,30 @@
 	</div>
 </section>
 
-<section id="lisbon-tiles">
+<section class="tile-submit">
 	<div class="container">
 		<div class="row">
-			<!-- Janela 1 -->
-			<a href="interna1.html">
-				<div class="col col4 m-col6 s-col12 left">
-					<article class="box-grid">
-						<figure>
-							<img src="imgs/azulejo1.png" alt="">
-						</figure>
-						<header><h3>O Botequim</h3></header>
-					</article>
-				</div>
-			</a>
-
-			<!-- Janela 2 -->
-			<a href="interna2.html">
-				<div class="col col4 m-col6 s-col12 left">
-					<article class="box-grid">
-						<figure>
-							<img src="imgs/azulejo2.png" alt="">
-						</figure>
-						<header><h3>Rua da Verônica</h3></header>
-					</article>
-				</div>
-			</a>
-
-			<!-- Janela 3 -->
-			<a href="interna3.html">
-				<div class="col col4 m-col6 s-col12 left">
-					<article class="box-grid">
-						<figure>
-							<img src="imgs/azulejo3.png" alt="">
-						</figure>
-						<header><h3>Fonte de Sintra</h3></header>
-					</article>
-				</div>
-			</a>
-
-			<!-- Janela 4 -->
-			<a href="interna4.html">
-				<div class="col col4 m-col6 s-col12 left">
-					<article class="box-grid">
-						<figure>
-							<img src="imgs/azulejo6.png" alt="">
-						</figure>
-						<header><h3>Livraria João da Mata</h3></header>
-					</article>
-				</div>
-			</a>
-
-			<!-- Janela 5 -->
-			<a href="interna5.html">
-				<div class="col col4 m-col6 s-col12 left">
-					<article class="box-grid">
-						<figure>
-							<img src="imgs/azulejo5.png" alt="">
-						</figure>
-						<header><h3>Kalili</h3></header>
-					</article>
-				</div>
-			</a>	
-
-			<!-- Janela 6 -->
-			<a href="interna6.html">
-				<div class="col col4 m-col6 s-col12 left">
-					<article class="box-grid">
-						<figure>
-							<img src="imgs/azulejo4.png" alt="">
-						</figure>
-						<header><h3>Café da Feira da Ladra</h3></header>
-					</article>
-				</div>
-			</a>			
-
+			<div class="col col8 m-col8 s-col12 left">
+				<form id="submit-your-tile">
+					<label for="author">Author</label>
+					<input type="text" id="author">
+					<label>Tile Adress</label>
+					<input type="text" id="tile-adress">
+					<label for="tile-history">Tile History</label>
+					<textarea id="tile-history" cols="30" rows="10"></textarea>
+					<label>svg Upload</label>
+					<input type="file" name="pic" accept="image/*">
+					<input type="submit">
+				</form>
+			</div>
+			<div class="col col2 m-col2 s-col12 right">
+				<img src="imgs/cc-black.png">
+				<p>By submitting your tile you agree with creative commons licence. </p>
+				<p>If you prefer, share your tile by mail anacomh@adentro.co</p>
+			</div>			
 		</div>
 	</div>
 </section>
-
 
 <!-- footer -->
 <div class="top-footer">
@@ -180,7 +124,7 @@
 <footer id="main-footer">
 	<div class="container">
 		<div class="footer-text">
-			<img src="imgs/cc-white.png" alt="">
+			<img src="imgs/cc-white.png" alt="Creative Commons">
 			<p>©2018 Lisbon Tile playground was designed and developed by anah assumpcão from <a href="adentro.co">adentro.co</a></p>
 
 		</div>	

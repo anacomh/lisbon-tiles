@@ -1,3 +1,16 @@
+
+$('#hide-settings').click(function(){
+	$('#hide-settings').toggleClass('hide-settings-active');
+	$('.settings').slideToggle();
+
+});
+
+$('#toggle-dropdown').click(function(){
+	$('#dropdown').slideToggle();
+});
+
+
+
 // /********
 
 // 			PLAYGROUND SETTINGS
